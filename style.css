@@ -1,0 +1,210 @@
+ * {
+    margin: 0;
+    padding: 0;
+}
+                
+html,
+body {
+     min-height: 100%;
+}
+                
+body {
+    background-color: #535556;
+    display: flex;
+    flex-direction: column;
+    height: 145vh;
+}
+/* HEADER START */
+                
+.header {
+    display: flex;
+    flex: 1;
+    background-image: url('./assets/header-background.png');
+    background-size: cover;
+}
+                
+.header h1 {
+    align-self: center;
+    margin-left: 4%;
+    color: #FFD600;
+    font-family: 'Ropa Sans';
+    font-size: 50px;
+    letter-spacing: 10px;
+}
+/* HEADER END */
+                
+.content {
+    display: flex;
+    justify-content: space-evenly;
+    flex: 1.5;
+    transform: translateY(-40px);
+}
+                
+.box {
+    width: 490px;
+    height: 630px;
+}
+/* CHARACTER START */
+                
+.character-box {
+    display: flex;
+    flex-direction: column;
+}
+                
+.character-header {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background-color: #535556;
+    color: #FFD600;
+    font-family: 'Ropa Sans';
+    letter-spacing: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+                
+.characters {
+    flex: 6;
+    background-color: #C4C4C4;
+    overflow: hidden;
+}
+                
+.characters ul {
+    list-style-type: none;
+    font-family: 'Ropa Sans';
+    font-size: 21px;
+    padding: 0;
+}
+                
+.characters li {
+    padding: 7px 0px 7px 15px;
+    letter-spacing: 3px;
+    cursor: pointer;
+}
+                
+                
+.characters ul li:nth-child(odd) {
+    color: white;
+    background-color: #8E8E8E;
+}
+                
+.characters li:nth-child(even) {
+    background-color: #E1DEDE;
+    color: #535556;
+    line-height: 100%;
+}
+                
+.pagination {
+    display: flex;
+    flex: 2;
+    justify-content: center;
+    align-items: flex-end;
+    background-color: #C4C4C4;
+}
+                
+.pagination div {
+    justify-content: center;
+    align-content: flex-end;
+}
+                
+.pages {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+.active {
+    background-color: #535556 !important;
+}
+
+.push:hover {
+    stroke-width: 2;
+    stroke-dasharray: 422;
+    font-size: 18px;
+    opacity: 0.8;
+    transition: all 0.5s;
+    padding-left: 1.8rem;
+}
+                
+.hideArrow {
+    display: none;
+}
+                
+#spinner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+/* CHARACTER END */
+/* DETAILS START */
+                
+.details-box {
+    display: flex;
+    flex-direction: column;
+}
+                
+.details-header {
+    background-color: #748687;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    color: #FFD600;
+    font-family: 'Ropa Sans';
+    letter-spacing: 3px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+                
+.detail {
+    background-color: #C4C4C4;
+    flex: 4;
+}
+                
+#spinner-detail {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+                
+#spinner-planet {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+                
+.detail-info {
+    list-style-type: none;
+    font-family: 'Ropa Sans';
+    font-size: 19px;
+    padding: 0px 0px 0px 15px;
+    letter-spacing: 3px;
+                }
+                
+.planet {
+    background-color: #8E8E8E;
+    flex: 4;
+}
+                
+.planet-info {
+    list-style-type: none;
+    font-family: 'Ropa Sans';
+    font-size: 19px;
+    padding: 0px 0px 0px 15px;
+    letter-spacing: 3px;
+    color: white;
+}
+                
+.largetext {
+    font-size: 30px;
+    letter-spacing: 4px;
+}
+/* DETAILS END */
